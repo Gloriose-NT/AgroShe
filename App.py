@@ -107,6 +107,7 @@ def load_data():
     return df
 
 df = load_data()
+df = pd.read_csv("data/processed/agrosphere_data.csv")
 all_years    = sorted(df["Year"].unique())
 all_countries = sorted(df["Country Name"].unique())
 
